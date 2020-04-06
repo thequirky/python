@@ -4,7 +4,7 @@ import io
 
 
 def profile(fnc):
-    """A decorator that uses cProfile to profile a function"""
+    """A decorator that uses cProfile to profile a function and print a report"""
 
     def inner(*args, **kwargs):
 
