@@ -2,7 +2,7 @@ output = []
 
 
 def flatten_nested(lst):
-    """flatten a nested list"""
+    """flatten a nested lists"""
 
     for i in lst:
         if isinstance(i, list):
@@ -14,4 +14,4 @@ def flatten_nested(lst):
 
 
 if __name__ == "__main__":
-    print(flatten_nested([1, 2, [3, 4]]))
+    print(flatten_nested([1, 2, [3, [4, 5]]]))
