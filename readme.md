@@ -1,1 +1,1 @@
-Various handy python stuff.
+Handy python stuff.
