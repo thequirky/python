@@ -1,5 +1,5 @@
 def replace_keys(dct, old, new):
-    """Replace the keys of a nested dictionary matching a value with a new value 
+    """replace the keys of a nested dictionary matching a value with a new value 
     recursively"""
 
     output_dict = {}
