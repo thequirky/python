@@ -4,6 +4,7 @@ def replace_keys(dct, old, new):
 
     output_dict = {}
     for k, v in dct.items():
-        k = new if k == old else k
+        if k == old:
+            k = new
         output_dict[k] = replace_keys(v, old, new) if isinstance(v, dict) else v
     return output_dict
