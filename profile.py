@@ -1,10 +1,13 @@
-import cProfile, pstats, io
+import cProfile
+import pstats
+import io
 
 
 def profile(fnc):
-    """A decorator that uses cProfile to profile a function and print report"""
-    
+    """A decorator that uses cProfile to profile a function"""
+
     def inner(*args, **kwargs):
+
         pr = cProfile.Profile()
         pr.enable()
         retval = fnc(*args, **kwargs)
@@ -15,5 +18,5 @@ def profile(fnc):
         ps.print_stats()
         print(s.getvalue())
         return retval
-        
+
     return inner
