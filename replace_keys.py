@@ -1,6 +1,5 @@
 def replace_keys(dct, old, new):
-    """replace the keys of a nested dictionary matching a value with a new value 
-    recursively"""
+    """replace the keys of a nested dictionary with a new key recursively"""
 
     output_dict = {}
     for k, v in dct.items():
