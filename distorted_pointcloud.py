@@ -8,6 +8,7 @@ def distorted_pointcloud(input_file, factor=1, separator=','):
     with open('output.txt', 'w+') as out_f:
         for line in lines:
             x, y, z, dx, dy, dz = [float(i) for i in line.split(separator)[:6]]
-            out_f.write(f"{x+factor*dx},{y+factor*dy},{z+factor*dz}\n")
+            dx, dy, dz = factor*dx, factor*dy, factor*dz
+            out_f.write(f"{x+dx},{y+dy},{z+dz}\n")
 
     return
