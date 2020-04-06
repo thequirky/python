@@ -1,7 +1,7 @@
 def distort_pointcloud(input_file, factor=1, separator=','):
     """Accepts a nominal pointcloud and point deviations and returns the
     distorted pointcloud. Use a factor of -1 to reverse distortion or a factor
-    of 2 to magnify distorion"""
+    of 2 to magnify distortion"""
 
     with open(input_file, 'r') as f:
         lines = f.readlines()
