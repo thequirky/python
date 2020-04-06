@@ -2,7 +2,7 @@ output = []
 
 
 def flatten_nested(lst):
-    """flatten a nested lists"""
+    """flatten a nested list"""
 
     for i in lst:
         if isinstance(i, list):
