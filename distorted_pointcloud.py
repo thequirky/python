@@ -1,4 +1,4 @@
-def distorted_pointcloud(input_file, factor=1, separator=','):
+def distort_pointcloud(input_file, factor=1, separator=','):
     """Accepts a nominal pointcloud and point deviations and returns the
     distorted pointcloud. Use a factor of -1 to reverse distortion"""
 
