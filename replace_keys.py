@@ -6,4 +6,5 @@ def replace_keys(dct, old, new):
         if k == old:
             k = new
         output_dict[k] = replace_keys(v, old, new) if isinstance(v, dict) else v
+        
     return output_dict
