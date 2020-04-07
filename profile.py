@@ -3,9 +3,7 @@ import pstats
 
 
 def profile(fnc):
-    """
-    A decorator that uses cProfile to profile a function and print a report
-    """
+    """decorator that uses cProfile to profile a function and save a report"""
 
     def inner(*args, **kwargs):
         pr = cProfile.Profile()
