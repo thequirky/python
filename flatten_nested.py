@@ -2,10 +2,12 @@ output = []
 
 
 def flatten_nested(lst):
-    """flatten a nested list"""
+    """
+    flatten a nested list
+    """
 
     for i in lst:
-        if isinstance(i, list):
+        if type(i) is list:
             flatten_nested(i)
         else:
             output.append(i)
