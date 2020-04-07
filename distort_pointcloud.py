@@ -12,6 +12,10 @@ def distort_pointcloud(input_file, factor=1, separator=','):
         for line in lines:
             x, y, z, dx, dy, dz = [float(i) for i in line.split(separator)[:6]]
             dx, dy, dz = factor*dx, factor*dy, factor*dz
-            out_f.write(f'{x+dx},{y+dy},{z+dz}\n')
+            out_f.write('{},{},{}\n'.format(x+dx, y+dy, z+dz))
 
     return
+
+
+if __name__ == "__main__":
+    distort_pointcloud(input_file="distorted_example.txt")
