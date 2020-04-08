@@ -21,6 +21,5 @@ if __name__ == "__main__":
 
     from examples import make_pointcloud
 
-    f = "original_pointcloud.txt"
-    make_pointcloud(f)
-    distort_pointcloud(f)
+    make_pointcloud("original_pointcloud.txt")
+    distort_pointcloud("original_pointcloud.txt")
