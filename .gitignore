@@ -4,3 +4,11 @@ profile.pyc
 profile_report.txt
 
 output.txt
+
+*.pyc
+
+original_pointcloud.txt
+
+scratch*
+
+distorted_example.txt
